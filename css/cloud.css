@@ -1,0 +1,58 @@
+.cloud {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  animation-name: cloud--movement;
+  animation-iteration-count: infinite;
+}
+.cloud__element {
+  background: #f2f9fe;
+  position: relative;
+}
+.cloud__element__big_sphere {
+  box-shadow: 10px 3px 15px #d9f1ff inset;
+  width: 90px;
+  height: 90px;
+  left: 180px;
+  top: 10px;
+  border-radius: 100%;
+}
+.cloud__element__small_sphere {
+  left: 60px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.cloud__element__base_sphere {
+  width: 150px;
+  height: 60px;
+  border-radius: 100px;
+  right: 15px;
+  top: 45px;
+}
+.cloud--1 {
+  right: 800px;
+  top: 50px;
+  animation-duration: 60s;
+}
+.cloud--2 {
+  right: 400px;
+  top: 100px;
+  animation-duration: 200s;
+}
+.cloud--3 {
+  right: 100px;
+  top: 20px;
+  animation-duration: 120s;
+}
+@keyframes cloud--movement {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 188vh;
+  }
+}

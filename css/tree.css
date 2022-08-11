@@ -1,0 +1,59 @@
+.tree {
+  position: fixed;
+  right: 1000px;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.tree__up {
+  height: 37.5px;
+  width: 50px;
+  background: #42db38;
+  border-radius: 100px / 50px;
+  border: solid;
+  position: relative;
+  top: 30px;
+}
+.tree__mid {
+  height: 75px;
+  width: 75px;
+  background: #42db38;
+  border-radius: 80px / 50px;
+  position: relative;
+  box-shadow: 10px 3px 15px #008b00 inset;
+  top: 20px;
+  border: solid;
+}
+.tree__trunk {
+  height: 75px;
+  width: 18.75px;
+  background-color: #eb7f23;
+  border: solid;
+  box-shadow: 10px 3px 15px #871b00 inset;
+}
+.tree__position--left {
+  right: 1200px;
+}
+.tree__position--midleft {
+  right: 1000px;
+}
+.tree__position--mid {
+  right: 900px;
+}
+.tree__position--right {
+  right: 50px;
+}
+.tree_hover {
+  background-color: #004500;
+}
+.tree__up:hover {
+  background-color: #004500;
+}
+.tree_trunk:hover {
+  background-color: #004500;
+}
+.tree__mid:hover {
+  background-color: #004500;
+}

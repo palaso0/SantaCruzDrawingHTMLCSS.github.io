@@ -1,0 +1,36 @@
+.moon {
+  position: fixed;
+  left: 500px;
+  top: 45px;
+  width: 70px;
+  height: 70px;
+  background: #c7cbd0;
+  border-radius: 50%;
+  box-shadow: inset -25px 0px 0 0px #9098a1, 0 0 35px 5px #9098a1;
+  display: block;
+  animation-name: moon--movement;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+.moon:hover {
+  background-color: beige;
+  box-shadow: inset -25px 0px 0 0px #bdbd89, 0 0 35px 5px beige;
+}
+@keyframes moon--movement {
+  from {
+    left: -90px;
+  }
+  to {
+    left: 194vh;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .moon {
+    display: block;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .moon {
+    display: none;
+  }
+}

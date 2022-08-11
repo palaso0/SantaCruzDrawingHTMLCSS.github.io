@@ -1,0 +1,103 @@
+.tower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tower__cross {
+  background-color: #01053d;
+  border: 1px solid #324261;
+}
+.tower__cross__vertical {
+  width: 7px;
+  height: 80px;
+  position: relative;
+}
+.tower__cross__horizontal {
+  width: 70px;
+  height: 7px;
+  position: relative;
+  top: 25px;
+}
+.tower__structure {
+  width: 80px;
+  height: 50px;
+  background-color: #fff7e4;
+  border: solid;
+}
+.tower__structure__Horizontal {
+  width: 100px;
+  height: 10px;
+  border-radius: 2px;
+}
+.tower__pilars {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 10px 3px 15px #bbb3a2 inset;
+}
+.towers__structure__pilar {
+  width: 8px;
+  height: 60px;
+  background-color: #e3dbca;
+}
+.tower__down {
+  width: 80px;
+  height: 250px;
+  box-shadow: 10px 3px 15px #bbb3a2 inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clock {
+  width: 65px;
+  height: 65px;
+  margin-top: 15px;
+  border-radius: 50%;
+  background-color: #324261;
+  transform: rotate(180deg);
+  border: solid;
+}
+.clock__second {
+  background-color: #fff7e4;
+  height: 25px;
+  width: 2px;
+  border-radius: 1px;
+}
+.clock__minute {
+  background-color: #e3dbca;
+  height: 15px;
+  width: 3px;
+  border-radius: 2px;
+}
+.clock__hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center 0;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.clock__second--hand {
+  animation: rotate steps(60) 60s infinite;
+}
+.clock__minute--hand {
+  animation: rotate linear 3600s infinite;
+  animation-delay: -1200s;
+}
+.tower--darkDirty {
+  background-color: #324261;
+}
+.tower--whiteDirty {
+  background-color: #e3dbca;
+}
+@media (prefers-color-scheme: dark) {
+  .clock {
+    background-color: #ceaa47a4;
+  }
+}

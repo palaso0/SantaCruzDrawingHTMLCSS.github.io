@@ -1,0 +1,13 @@
+.road {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+}
+.road__background {
+  width: 200vh;
+  height: 150px;
+  background: #EB6325;
+  background: linear-gradient(90deg, #EB6325 0%, #ebbf58 60%, #EB9056 100%);
+  box-shadow: 10px 3px 15px #5f0000 inset;
+}

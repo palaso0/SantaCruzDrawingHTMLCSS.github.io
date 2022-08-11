@@ -1,0 +1,153 @@
+.person {
+  position: fixed;
+  left: 200px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.person__sao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sao {
+  background-color: #ebb250;
+  border: 1px solid;
+  position: relative;
+  top: 40px;
+}
+.sao_up {
+  width: 40px;
+  height: 25px;
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
+}
+.sao_down {
+  height: 25px;
+  width: 80px;
+  background-color: #ebb250;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+}
+.person__head {
+  height: 50px;
+  width: 40px;
+  background-color: #eeb088;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person__hair {
+  background-color: #302301;
+  width: 40px;
+  height: 25px;
+  border-radius: 20px 20px 0 0;
+}
+.person__mouth {
+  background-color: red;
+  width: 10px;
+  height: 5px;
+  position: relative;
+  top: 13px;
+  border-radius: 5px;
+}
+.person__neck {
+  background-color: #eeb088;
+  width: 10px;
+  height: 5px;
+}
+.person__body {
+  background-color: #f9f7f5;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.person__chest {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #eeb088;
+}
+.person__arm {
+  position: absolute;
+  background-color: #f9f7f5;
+  width: 15px;
+  height: 50px;
+  border-radius: 15px;
+  z-index: -1;
+}
+.left__arm {
+  bottom: 90px;
+  left: 0px;
+  transform: rotate(45deg);
+}
+.right__arm {
+  bottom: 90px;
+  right: 0px;
+  transform: rotate(-45deg);
+}
+.left__forearm {
+  top: 130px;
+  left: 0px;
+  transform: rotate(-45deg);
+}
+.right__forearm {
+  top: 130px;
+  right: 0px;
+  transform: rotate(45deg);
+  z-index: -2;
+}
+.person_pants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.person__weit {
+  width: 50px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+.person_pant__init {
+  width: 50px;
+  height: 20px;
+  background-color: #f9f7f5;
+}
+.person__pant {
+  width: 20px;
+  height: 35px;
+  background-color: #f9f7f5;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.person__legs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.person__leg {
+  height: 15px;
+  width: 10px;
+  background-color: #eeb088;
+  justify-self: end;
+}
+.person__feet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.person__foot {
+  height: 5px;
+  width: 15px;
+  background-color: #ebb250;
+  border-radius: 2px;
+  justify-self: end;
+  box-shadow: 0px 3px  5px black;
+}

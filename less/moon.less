@@ -1,0 +1,44 @@
+// out: "../css/moon.css"
+@import url('lib.less');
+
+.moon {
+    position: fixed;
+    left: 500px;
+    top: 45px;
+    width: 70px;
+    height: 70px;
+    background: @moon_color;
+    border-radius: 50%;
+    box-shadow: inset -25px 0px 0 0px @moon_shadow, 0 0 35px 5px @moon_shadow;
+
+    display: block;
+    animation-name: moon--movement;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+}
+
+.moon:hover {
+    background-color: @moon_light;
+    box-shadow: inset -25px 0px 0 0px @moonight_shadow, 0 0 35px 5px @moon_light;
+}
+
+@keyframes moon--movement {
+    from {
+        left: -90px;
+    }
+    to {
+        left: 194vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .moon {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .moon {
+        display: none;
+    }
+}

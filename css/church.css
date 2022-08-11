@@ -1,0 +1,117 @@
+.church {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: -1000;
+  width: 500px;
+}
+.church__top {
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 100px solid #e6d0cc;
+}
+.church__down {
+  width: 400px;
+  height: 100px;
+  background-color: #e6d0cc;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #af9995;
+  border-bottom: 15px solid #4b3621;
+}
+.church__down__window {
+  background-color: #4b3621;
+  width: 50px;
+  height: 80px;
+  margin: 0px 40px;
+  border: 2px solid;
+  box-shadow: 3px 3px 15px #7c6752 inset;
+}
+.church__woodPart {
+  width: 400px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 0px;
+}
+.church__columnsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 133.33333333px;
+}
+.church__column {
+  width: 10px;
+  border-top: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #5a4530;
+  border: solid;
+}
+.church__column--min {
+  height: 120px;
+}
+.church__column--med {
+  height: 145px;
+}
+.church__column--max {
+  height: 175px;
+}
+.church_roofPart {
+  width: 400px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 75px;
+  z-index: -1;
+}
+.church__roof--up {
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 125px solid #4b3621;
+}
+.church__roof--down {
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-top: 40px solid #4b3621;
+}
+.church_doorContainer {
+  display: flex;
+}
+.church__doorLateral {
+  width: 30px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.church__doorLateral__decoration {
+  width: 20px;
+  height: 40px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-color: #e8ac5d;
+  border: 2px solid #4b3621;
+  box-shadow: 5px 5px 15px #ffffc1 inset;
+}
+.church__door {
+  background-color: #eb872c;
+  width: 80px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 2px solid #4b3621;
+  box-shadow: 5px 5px 15px #edb162 inset;
+}
+@media (prefers-color-scheme: dark) {
+  .church__door {
+    background-color: #ebcc78;
+  }
+  .church__down__window {
+    background-color: #ebcc78;
+  }
+}

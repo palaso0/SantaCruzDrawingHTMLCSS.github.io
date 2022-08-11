@@ -1,0 +1,24 @@
+// out: "../css/road.css"
+
+@import url('lib.less');
+
+.road {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+}
+
+.road__background {
+    width: 200vh;
+    height: 150px;
+    background: @road-bg_color;
+    background: linear-gradient(
+        90deg,
+        @road-bg_color 0%,
+        @path_color 60%,
+        @road_bg_second_color 100%
+    );
+    box-shadow: 10px 3px 15px @road-bg_color - 140 inset;
+}
+

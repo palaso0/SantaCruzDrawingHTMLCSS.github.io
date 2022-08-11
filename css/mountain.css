@@ -1,0 +1,25 @@
+.mountainsContainer {
+  position: fixed;
+  z-index: 0;
+}
+.mountain {
+  position: fixed;
+  background-color: green;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 10px 3px 15px #001c00 inset;
+  border: 1px solid;
+}
+.mountain--left {
+  height: 150px;
+  width: 1000px;
+  left: -50px;
+  bottom: 150px;
+}
+.mountain--right {
+  height: 100px;
+  width: 500px;
+  right: -50px;
+  bottom: 150px;
+}

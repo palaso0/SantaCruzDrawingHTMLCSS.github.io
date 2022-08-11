@@ -1,0 +1,9 @@
+.mission {
+  position: fixed;
+  right: 250px;
+  bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  z-index: 1;
+}

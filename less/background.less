@@ -1,0 +1,26 @@
+// out: "../css/background.css"
+
+@import url('lib.less');
+
+.background {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    @bg-color: rgb(5, 39, 90);
+    @bg-secondary: rgb(85, 130, 197);
+    .background {
+        background: @bg-color;
+        background: linear-gradient(45deg, @bg-color 67%, @bg-secondary 100%);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    @bg-color: rgba(156, 193, 250);
+    @bg-secondary: rgba(224, 239, 254);
+    .background {
+        background: @bg-color;
+        background: linear-gradient(45deg, @bg-color 67%, @bg-secondary 100%);
+    }
+}
